@@ -1,0 +1,45 @@
+// Text-level
+//
+// Markup:
+//<h1>Heading 1</h1>
+//<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda minima perferendis, rerum aut voluptates earum maxime, cum deleniti dignissimos amet!</p>
+//<h2>Heading 2</h2>
+//<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda minima perferendis, rerum aut voluptates earum maxime, cum deleniti dignissimos amet!</p>
+//<h3>Heading 3</h3>
+//<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda minima perferendis, rerum aut voluptates earum maxime, cum deleniti dignissimos amet!</p>
+//<h4>Heading 4</h4>
+//<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda minima perferendis, rerum aut voluptates earum maxime, cum deleniti dignissimos amet!</p>
+//<h5>Heading 5</h5>
+//<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda minima perferendis, rerum aut voluptates earum maxime, cum deleniti dignissimos amet!</p>
+//<h6>Heading 6</h6>
+//<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda minima perferendis, rerum aut voluptates earum maxime, cum deleniti dignissimos amet!</p>
+//<address>
+//  Amsterdam,
+//  The Netherlands
+//</address>
+//
+// Styleguide Base.TextLevel
+
+
+$selection-background: $blue;
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $default-heading-font-family;
+  font-size: $default-heading-font-size;
+  font-weight: $default-heading-font-weight;
+  line-height: $default-heading-line-height;
+}
+
+address { font-style: normal; }
+
+// remove text-shadow in selection highlight for better readability.
+::selection {
+  background: $selection-background;
+  text-shadow: none;
+}

@@ -1,0 +1,23 @@
+// Links
+//
+// Markup:
+//<a href="#">Text link</a>
+//
+// Styleguide Base.Links
+
+
+$a-color: $black;
+$a-hover-color: $black;
+
+
+a {
+  color: $a-color;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover,
+a:focus {
+  color: $a-hover-color;
+  outline: 0;
+}

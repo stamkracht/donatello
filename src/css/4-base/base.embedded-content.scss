@@ -1,0 +1,28 @@
+// Embedded content
+//
+// Markup:
+//<img src="http://placehold.it/300x150">
+//<video src="public/assets/donatello.mp4" controls></video>
+//<embed src="public/assets/donatello.mp4" type="video/mp4">
+//<object data="public/assets/donatello.mp4" type="video/mp4"></object>
+//<audio src="public/assets/donatello.mp3" controls></audio>
+//<canvas></canvas>
+//
+// Styleguide Base.EmbeddedContent
+
+
+// fluid-width media that maintain their aspect ratios.
+img,
+video,
+audio,
+embed,
+object {
+  max-width: 100%;
+  display: block;
+}
+
+// remove the gap between images, videos, audio and canvas and the bottom of their containers.
+audio,
+canvas,
+img,
+video { vertical-align: middle; }

@@ -1,0 +1,10 @@
+// Calculate px to em.
+//
+// em($target, $context: $default-font-size); - transform pixel to em.
+//
+// Styleguide Tools.Functions.PxToEm
+
+
+@function em($target, $context: $default-font-size) {
+  @return ($target / $context) * 1em;
+}
