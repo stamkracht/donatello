@@ -1,0 +1,12 @@
+// Hidden
+//
+// Utility class to hide elements.
+// - u-hidden
+//
+// Styleguide Trumps.Utilities.Hidden
+
+
+.u-hidden {
+  display: none !important;
+  visibility: hidden !important;
+}

@@ -1,0 +1,20 @@
+// Card
+//
+// Markup:
+//<section class="c-card">
+//  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit fugit alias tenetur quam voluptatum animi quos numquam illo. Maiores, doloribus!</p>
+//</section>
+//
+// Styleguide Components.Card
+
+
+.c-card {
+  box-shadow: 0 0 2px rgba($black, 0.9);
+  display: block;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  color: $black;
+  background: $white;
+  font-size: 1rem;
+}

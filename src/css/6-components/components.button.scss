@@ -1,0 +1,23 @@
+// Button
+//
+// Markup:
+// <button class="c-button">button</button>
+// <a class="c-button">a-button</a>
+// <span class="c-button">span-button</span>
+//
+// Styleguide Components.Button
+
+
+.c-button {
+  display: inline-block;
+  border: 0;
+  border-radius: 3px;
+  padding: 5px 10px;
+  color: $white;
+  background: $black;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover { color: $white; }
+}

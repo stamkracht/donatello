@@ -1,0 +1,13 @@
+// Clearfix
+//
+// For all your float troubles.
+// - u-clearfix
+//
+// Styleguide Trumps.Utilities.Clearfix
+
+
+.u-clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}

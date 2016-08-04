@@ -1,0 +1,10 @@
+// Box-sizing model
+//
+// https://css-tricks.com/box-sizing/
+//
+// Styleguide Generic.BoxSizingModel
+
+
+*,
+*:before,
+*:after { box-sizing: border-box; }

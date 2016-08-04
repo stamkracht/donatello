@@ -1,0 +1,77 @@
+// Input group
+//
+// Markup:
+//<form class="c-form"
+//      action="">
+//  <fieldset class="c-form__group">
+//    <legend class="c-form__group-title">Show me the money</legend>
+//      <label class="c-form__control">
+//        How much can you lose?
+//        <div class="c-input-group">
+//          <span class="c-input-group__label">€</span>
+//          <input class="c-input-group__field" type="number" placeholder="over 9000!">
+//          <div class="c-input-group__button">
+//            <button>This much</button>
+//          </div>
+//        </div>
+//      </label>
+//  </fieldset>
+//</form>
+//
+// Styleguide Components.InputGroup
+
+
+$c-input-group-border-color: $gray;
+$c-input-group-font-color: $black;
+$c-input-group-placeholder-color: $gray;
+
+
+.c-input-group {
+  display: table;
+  width: 100%;
+
+  & ::placeholder { color: $c-input-group-placeholder-color; }
+}
+
+.c-input-group .c-input-group__label {
+  display: table-cell;
+  width: 1%;
+  height: 100%;
+  padding: 0px 10px;
+  color: $c-input-group-font-color;
+  background: $gray;
+  vertical-align: middle;
+  text-align: center;
+  white-space: nowrap;
+  cursor: auto;
+}
+
+.c-input-group .c-input-group__field {
+  display: table-cell;
+  width: 100%;
+  border: 1px solid $c-input-group-border-color;
+  padding: 7px 10px;
+  color: $c-input-group-font-color;
+  vertical-align: middle;
+  line-height: inherit;
+}
+
+.c-input-group .c-input-group__button {
+  display: table-cell;
+  width: 1%;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+  white-space: nowrap;
+
+  & a,
+  & button,
+  & input[type="submit"] {
+    display: block;
+    border: 0;
+    padding: 8px 10px;
+    cursor: pointer;
+    color: $c-input-group-font-color;
+    background: $gray;
+  }
+}
