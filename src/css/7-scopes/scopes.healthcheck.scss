@@ -2,7 +2,8 @@
 //
 // Run a visual healthcheck against our UI. By using substring selectors,
 // we can target and then visualise the general makeup of a page based
-// on the types of class it contains.
+// on the types of class it contains. Add the `s-healthcheck` class to
+// your body element.
 //
 // Styleguide Scopes.Healthcheck
 

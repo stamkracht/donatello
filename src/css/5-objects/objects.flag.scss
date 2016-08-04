@@ -2,6 +2,19 @@
 //
 // http://csswizardry.com/2013/05/the-flag-object/
 //
+// Markup:
+//<div class="o-flag {{modifier_class}}">
+//  <div class="o-flag__img">
+//    <img src="http://www.placehold.it/400x200">
+//  </div>
+//  <div class="o-flag__body">
+//    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, ipsam.</p>
+//  </div>
+//</div>
+//
+// .o-flag--top     - text aligned top.
+// .o-flag--bottom  - text aligned bottom.
+//
 // Styleguide Objects.Flag
 
 
