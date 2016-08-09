@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Donatello Styleguide</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="generator" content="kss-node">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300">
+    <link rel="stylesheet" href="kss-assets/vendor/prism.css">
+    <link rel="stylesheet" href="kss-assets/css/kss.css">
+    <link rel="stylesheet" href="../../dest/css/main.min.css">
+
+  </head>
+
+  <body class="kss-body">
+
+    <!-- header. -->
+    <header class="kss-header">
+      <section class="kss-header__inner">
+        <a class="kss-header__hamburger-trigger">
+          <div class="kss-header__hamburger"></div>
+        </a>
+        <h1 class="kss-header__title kss-title">Donatello Styleguide</h1>
+      </section>
+    </header>
+    <!-- /header. -->
+
+
+    <!-- navigation. -->
+    <section class="kss-navigation">
+      <h1 class="kss-navigation__title kss-title">Donatello Styleguide</h1>
+      <ul class="kss-nav">
+        <li class="kss-nav__item">
+          <a href="index.html">
+            <span class="kss-nav__ref">0</span>
+            <span class="kss-nav__name">Introduction</span>
+          </a>
+        </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-settings.html">
+              <span class="kss-nav__ref">1</span>
+              <span class="kss-nav__name">Settings</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="kss-state-active" href="section-tools.html">
+              <span class="kss-nav__ref">2</span>
+              <span class="kss-nav__name">Tools</span>
+            </a>
+                <ul class="kss-nav__subnav">
+                    <li class="kss-nav__item ">
+                      <a href="section-tools.html#kssref-tools-functions">
+                        <span class="kss-nav__ref">2.1</span>
+                        <span class="kss-nav__name">Functions</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-tools.html#kssref-tools-functions-pxtoem">
+                        <span class="kss-nav__ref">2.1.1</span>
+                        <span class="kss-nav__name">Calculate px to em.</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-tools.html#kssref-tools-functions-pxtomqunit">
+                        <span class="kss-nav__ref">2.1.2</span>
+                        <span class="kss-nav__name">Calculate px to em for media queries.</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-tools.html#kssref-tools-functions-pxtorem">
+                        <span class="kss-nav__ref">2.1.3</span>
+                        <span class="kss-nav__name">Calculate px to rem.</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-tools.html#kssref-tools-mixins">
+                        <span class="kss-nav__ref">2.2</span>
+                        <span class="kss-nav__name">Mixins</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-tools.html#kssref-tools-mixins-baseline">
+                        <span class="kss-nav__ref">2.2.1</span>
+                        <span class="kss-nav__name">Baseline</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-tools.html#kssref-tools-mixins-fontface">
+                        <span class="kss-nav__ref">2.2.2</span>
+                        <span class="kss-nav__name">Font-face</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-tools.html#kssref-tools-mixins-gridsystem">
+                        <span class="kss-nav__ref">2.2.3</span>
+                        <span class="kss-nav__name">Grid system</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-tools.html#kssref-tools-mixins-mediaqueries">
+                        <span class="kss-nav__ref">2.2.4</span>
+                        <span class="kss-nav__name">Media queries</span>
+                      </a>
+                    </li>
+                </ul>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-generic.html">
+              <span class="kss-nav__ref">3</span>
+              <span class="kss-nav__name">Generic</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-base.html">
+              <span class="kss-nav__ref">4</span>
+              <span class="kss-nav__name">Base</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-objects.html">
+              <span class="kss-nav__ref">5</span>
+              <span class="kss-nav__name">Objects</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-components.html">
+              <span class="kss-nav__ref">6</span>
+              <span class="kss-nav__name">Components</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-scopes.html">
+              <span class="kss-nav__ref">7</span>
+              <span class="kss-nav__name">Scopes</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-trumps.html">
+              <span class="kss-nav__ref">8</span>
+              <span class="kss-nav__name">Trumps</span>
+            </a>
+          </li>
+      </ul>
+    </section>
+    <!-- /navigation. -->
+
+
+    <!-- documentation. -->
+    <section class="kss-documentation">
+
+        <!--
+          display each section, in order.
+          the "root" element comes first in this loop, and can be detected using
+          the "#if @first" block as seen below.
+        -->
+            <header class="kss-section kss-section--depth-1" id="kssref-tools">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>css/2-tools/_tools.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-tools">
+                <h1 class="kss-section__item kss-section__item--depth-1">
+                  <span class="kss-section__ref">2</span>
+                  <span class="kss-section__name">Tools</span>
+                </h1>
+              </a>
+
+                <div class="kss-section__description"><p>Includes all the public mixins and helper functions.
+These globally-available tools should make our development flow easier.</p>
+</div>
+
+            </article>
+
+
+            </header>
+            <section class="kss-section kss-section--depth-2" id="kssref-tools-functions">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>css/2-tools/_functions.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-tools-functions">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">2.1</span>
+                  <span class="kss-section__name">Functions</span>
+                </h2>
+              </a>
+
+
+            </article>
+
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-tools-functions-pxtoem">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>css/2-tools/functions.em.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-tools-functions-pxtoem">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">2.1.1</span>
+                  <span class="kss-section__name">Calculate px to em.</span>
+                </h3>
+              </a>
+
+
+                <ul class="kss-parameters">
+                  <li class="kss-parameters__item">
+                    <p class="kss-parameters__description">
+                      transform pixel to em.
+
+                    </p>
+                    <code class="kss-parameters__name">em($target, $context: $default-font-size);</code>
+                  </li>
+                </ul>
+            </article>
+
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-tools-functions-pxtomqunit">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>css/2-tools/functions.mq-unit.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-tools-functions-pxtomqunit">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">2.1.2</span>
+                  <span class="kss-section__name">Calculate px to em for media queries.</span>
+                </h3>
+              </a>
+
+
+                <ul class="kss-parameters">
+                  <li class="kss-parameters__item">
+                    <p class="kss-parameters__description">
+                      transform media query pixel to em with a base of 16px (default browser font-size).
+
+                    </p>
+                    <code class="kss-parameters__name">mq-unit($target);</code>
+                  </li>
+                </ul>
+            </article>
+
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-tools-functions-pxtorem">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>css/2-tools/functions.rem.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-tools-functions-pxtorem">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">2.1.3</span>
+                  <span class="kss-section__name">Calculate px to rem.</span>
+                </h3>
+              </a>
+
+
+                <ul class="kss-parameters">
+                  <li class="kss-parameters__item">
+                    <p class="kss-parameters__description">
+                      transform pixel to rem.
+
+                    </p>
+                    <code class="kss-parameters__name">rem($target, $context: $default-font-size);</code>
+                  </li>
+                </ul>
+            </article>
+
+
+            </section>
+            <section class="kss-section kss-section--depth-2" id="kssref-tools-mixins">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>css/2-tools/_mixins.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-tools-mixins">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">2.2</span>
+                  <span class="kss-section__name">Mixins</span>
+                </h2>
+              </a>
+
+
+            </article>
+
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-tools-mixins-baseline">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>css/2-tools/mixins.baseline.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-tools-mixins-baseline">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">2.2.1</span>
+                  <span class="kss-section__name">Baseline</span>
+                </h3>
+              </a>
+
+                <div class="kss-section__description"><p><a href="https://medium.com/written-in-code/aligning-type-to-baseline-the-right-way-using-sass-e258fce47a9b">https://medium.com/written-in-code/aligning-type-to-baseline-the-right-way-using-sass-e258fce47a9b</a></p>
+</div>
+
+                <ul class="kss-parameters">
+                  <li class="kss-parameters__item">
+                    <p class="kss-parameters__description">
+                      @include baseline(font-size, scale)
+
+                    </p>
+                    <code class="kss-parameters__name">baseline($font-size, $scale: 2);</code>
+                  </li>
+                </ul>
+            </article>
+
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-tools-mixins-fontface">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>css/2-tools/mixins.font-face.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-tools-mixins-fontface">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">2.2.2</span>
+                  <span class="kss-section__name">Font-face</span>
+                </h3>
+              </a>
+
+
+                <ul class="kss-parameters">
+                  <li class="kss-parameters__item">
+                    <p class="kss-parameters__description">
+                      @include font-face(font-family, font-source, font-weight, font-style)
+
+                    </p>
+                    <code class="kss-parameters__name">font-face($font-family, $src, $font-weight, $font-style);</code>
+                  </li>
+                </ul>
+            </article>
+
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-tools-mixins-gridsystem">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>css/2-tools/mixins.grid.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-tools-mixins-gridsystem">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">2.2.3</span>
+                  <span class="kss-section__name">Grid system</span>
+                </h3>
+              </a>
+
+                <div class="kss-section__description"><p>Used to build up the object grid.</p>
+</div>
+
+            </article>
+
+
+            </section>
+            <section class="kss-section kss-section--depth-4" id="kssref-tools-mixins-gridsystem-mq">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>css/2-tools/mixins.grid.scss</span>, line <span>48</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-tools-mixins-gridsystem-mq">
+                <h4 class="kss-section__item kss-section__item--depth-4">
+                  <span class="kss-section__ref">2.2.3.1</span>
+                  <span class="kss-section__name">Grid system media queries</span>
+                </h4>
+              </a>
+
+
+                <ul class="kss-parameters">
+                  <li class="kss-parameters__item">
+                    <p class="kss-parameters__description">
+                      @include grid-mq(min/max-sm/md/lg)
+
+                    </p>
+                    <code class="kss-parameters__name">grid-mq($width);</code>
+                  </li>
+                </ul>
+            </article>
+
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-tools-mixins-mediaqueries">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>css/2-tools/mixins.mq.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-tools-mixins-mediaqueries">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">2.2.4</span>
+                  <span class="kss-section__name">Media queries</span>
+                </h3>
+              </a>
+
+                <div class="kss-section__description"><p>The following media queries mixins are possible.</p>
+<ul>
+<li>max-width and max-height</li>
+<li>min-width and min-height</li>
+<li>min-width and max-width</li>
+<li>min-height and max-height</li>
+<li>max-width</li>
+<li>max-height</li>
+<li>min-width</li>
+<li>min-height</li>
+</ul>
+</div>
+
+                <ul class="kss-parameters">
+                  <li class="kss-parameters__item">
+                    <p class="kss-parameters__description">
+                      @include mq(min/max, width/height, min/max, width/height)
+
+                    </p>
+                    <code class="kss-parameters__name">mq($min-max1, $width-height1, $min-max2, $width-height2);</code>
+                  </li>
+                </ul>
+            </article>
+
+
+            </section>
+    </section>
+    <!-- /documentation. -->
+
+
+
+  <!-- scripts. -->
+  <script src="kss-assets/vendor/jquery.js"></script>
+  <script src="kss-assets/vendor/prism.js"></script>
+  <script src="kss-assets/js/kss.js"></script>
+  <script src="../../dest/js/modernizr.min.js"></script>
+<script src="../../dest/js/vendor.min.js"></script>
+<script src="../../dest/js/main.min.js"></script>
+
+  <!-- /scripts. -->
+
+  </body>
+</html>

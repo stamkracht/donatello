@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Donatello Styleguide</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="generator" content="kss-node">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300">
+    <link rel="stylesheet" href="kss-assets/vendor/prism.css">
+    <link rel="stylesheet" href="kss-assets/css/kss.css">
+    <link rel="stylesheet" href="../../dest/css/main.min.css">
+
+  </head>
+
+  <body class="kss-body">
+
+    <!-- header. -->
+    <header class="kss-header">
+      <section class="kss-header__inner">
+        <a class="kss-header__hamburger-trigger">
+          <div class="kss-header__hamburger"></div>
+        </a>
+        <h1 class="kss-header__title kss-title">Donatello Styleguide</h1>
+      </section>
+    </header>
+    <!-- /header. -->
+
+
+    <!-- navigation. -->
+    <section class="kss-navigation">
+      <h1 class="kss-navigation__title kss-title">Donatello Styleguide</h1>
+      <ul class="kss-nav">
+        <li class="kss-nav__item">
+          <a href="index.html">
+            <span class="kss-nav__ref">0</span>
+            <span class="kss-nav__name">Introduction</span>
+          </a>
+        </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-settings.html">
+              <span class="kss-nav__ref">1</span>
+              <span class="kss-nav__name">Settings</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-tools.html">
+              <span class="kss-nav__ref">2</span>
+              <span class="kss-nav__name">Tools</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-generic.html">
+              <span class="kss-nav__ref">3</span>
+              <span class="kss-nav__name">Generic</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-base.html">
+              <span class="kss-nav__ref">4</span>
+              <span class="kss-nav__name">Base</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="kss-state-active" href="section-objects.html">
+              <span class="kss-nav__ref">5</span>
+              <span class="kss-nav__name">Objects</span>
+            </a>
+                <ul class="kss-nav__subnav">
+                    <li class="kss-nav__item ">
+                      <a href="section-objects.html#kssref-objects-flag">
+                        <span class="kss-nav__ref">5.1</span>
+                        <span class="kss-nav__name">Flag</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-objects.html#kssref-objects-grid">
+                        <span class="kss-nav__ref">5.2</span>
+                        <span class="kss-nav__name">Grid system</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-objects.html#kssref-objects-list">
+                        <span class="kss-nav__ref">5.3</span>
+                        <span class="kss-nav__name">List</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-objects.html#kssref-objects-listinline">
+                        <span class="kss-nav__ref">5.4</span>
+                        <span class="kss-nav__name">List inline</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-objects.html#kssref-objects-media">
+                        <span class="kss-nav__ref">5.5</span>
+                        <span class="kss-nav__name">Media</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-objects.html#kssref-objects-table">
+                        <span class="kss-nav__ref">5.6</span>
+                        <span class="kss-nav__name">Table</span>
+                      </a>
+                    </li>
+                </ul>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-components.html">
+              <span class="kss-nav__ref">6</span>
+              <span class="kss-nav__name">Components</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-scopes.html">
+              <span class="kss-nav__ref">7</span>
+              <span class="kss-nav__name">Scopes</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-trumps.html">
+              <span class="kss-nav__ref">8</span>
+              <span class="kss-nav__name">Trumps</span>
+            </a>
+          </li>
+      </ul>
+    </section>
+    <!-- /navigation. -->
+
+
+    <!-- documentation. -->
+    <section class="kss-documentation">
+
+        <!--
+          display each section, in order.
+          the "root" element comes first in this loop, and can be detected using
+          the "#if @first" block as seen below.
+        -->
+            <header class="kss-section kss-section--depth-1" id="kssref-objects">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>css/5-objects/_objects.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-objects">
+                <h1 class="kss-section__item kss-section__item--depth-1">
+                  <span class="kss-section__ref">5</span>
+                  <span class="kss-section__name">Objects</span>
+                </h1>
+              </a>
+
+                <div class="kss-section__description"><p>Object oriented CSS. Begin using classes exclusively for agnostically named
+noncosmetic design patterns. This layer is mostly layout-driven.</p>
+</div>
+
+            </article>
+
+
+            </header>
+            <section class="kss-section kss-section--depth-2" id="kssref-objects-flag">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>css/5-objects/objects.flag.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-objects-flag">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">5.1</span>
+                  <span class="kss-section__name">Flag</span>
+                </h2>
+              </a>
+
+                <div class="kss-section__description"><p><a href="http://csswizardry.com/2013/05/the-flag-object/">http://csswizardry.com/2013/05/the-flag-object/</a></p>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Examples</h1>
+
+                  <h2 class="kss-modifiers__name">Default styling</h2>
+
+                <div class="kss-modifiers__example"><div class="o-flag [modifier]">
+ <div class="o-flag__img">
+   <img src="http://www.placehold.it/400x200">
+ </div>
+ <div class="o-flag__body">
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, ipsam.</p>
+ </div>
+</div></div>
+
+                  <h2 class="kss-modifiers__name">.o-flag--top</h2>
+
+                  <p class="kss-modifiers__description">text aligned top.</p>
+
+                  <div class="kss-modifiers__example"><div class="o-flag o-flag--top">
+ <div class="o-flag__img">
+   <img src="http://www.placehold.it/400x200">
+ </div>
+ <div class="o-flag__body">
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, ipsam.</p>
+ </div>
+</div></div>
+                  <h2 class="kss-modifiers__name">.o-flag--bottom</h2>
+
+                  <p class="kss-modifiers__description">text aligned bottom.</p>
+
+                  <div class="kss-modifiers__example"><div class="o-flag o-flag--bottom">
+ <div class="o-flag__img">
+   <img src="http://www.placehold.it/400x200">
+ </div>
+ <div class="o-flag__body">
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, ipsam.</p>
+ </div>
+</div></div>
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;o-flag [modifier]&quot;&gt;
+ &lt;div class&#x3D;&quot;o-flag__img&quot;&gt;
+   &lt;img src&#x3D;&quot;http://www.placehold.it/400x200&quot;&gt;
+ &lt;/div&gt;
+ &lt;div class&#x3D;&quot;o-flag__body&quot;&gt;
+   &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, ipsam.&lt;/p&gt;
+ &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-2" id="kssref-objects-grid">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>css/5-objects/objects.grid.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-objects-grid">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">5.2</span>
+                  <span class="kss-section__name">Grid system</span>
+                </h2>
+              </a>
+
+                <div class="kss-section__description"><p>The grid system Splinter is used to simplify responsive design. It&#39;s completely customizable
+at the beginning of a project. <em>Note: changing the grid settings during a project can break the layout.</em>
+The 12 column grid has 3 breakpoints and is designed mobile first:</p>
+<ul>
+<li>sm: 568px</li>
+<li>md: 768px</li>
+<li>lg: 1024px</li>
+</ul>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><div class="g-row12">
+ <div class="g-col12--xs g-col8--md">
+   Content
+ </div>
+ <div class="g-col12--xs g-col4--md">
+   Content
+ </div>
+</div></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;g-row12&quot;&gt;
+ &lt;div class&#x3D;&quot;g-col12--xs g-col8--md&quot;&gt;
+   Content
+ &lt;/div&gt;
+ &lt;div class&#x3D;&quot;g-col12--xs g-col4--md&quot;&gt;
+   Content
+ &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-2" id="kssref-objects-list">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>css/5-objects/objects.list.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-objects-list">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">5.3</span>
+                  <span class="kss-section__name">List</span>
+                </h2>
+              </a>
+
+                <div class="kss-section__description"><p>List items without bullets and no padding on the left side.</p>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><ul class="o-list">
+ <li>item 1</li>
+ <li>item 2</li>
+ <li>item 3</li>
+ <li>item 4</li>
+</ul></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;ul class&#x3D;&quot;o-list&quot;&gt;
+ &lt;li&gt;item 1&lt;/li&gt;
+ &lt;li&gt;item 2&lt;/li&gt;
+ &lt;li&gt;item 3&lt;/li&gt;
+ &lt;li&gt;item 4&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-2" id="kssref-objects-listinline">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>css/5-objects/objects.list-inline.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-objects-listinline">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">5.4</span>
+                  <span class="kss-section__name">List inline</span>
+                </h2>
+              </a>
+
+                <div class="kss-section__description"><p>Inlines the list items.</p>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><ul class="o-list-inline">
+ <li>item 1</li>
+ <li>item 2</li>
+ <li>item 3</li>
+ <li>item 4</li>
+</ul></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;ul class&#x3D;&quot;o-list-inline&quot;&gt;
+ &lt;li&gt;item 1&lt;/li&gt;
+ &lt;li&gt;item 2&lt;/li&gt;
+ &lt;li&gt;item 3&lt;/li&gt;
+ &lt;li&gt;item 4&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-2" id="kssref-objects-media">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>css/5-objects/objects.media.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-objects-media">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">5.5</span>
+                  <span class="kss-section__name">Media</span>
+                </h2>
+              </a>
+
+                <div class="kss-section__description"><p>The media object can save you hundreds of line of code.
+<a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/</a>
+An alternative css object is the flag object.</p>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><div class="o-media">
+ <div class="o-media__img">
+   <img src="http://www.placehold.it/400x200">
+ </div>
+ <div class="o-media__body">
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, ratione.</p>
+ </div>
+</div></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;o-media&quot;&gt;
+ &lt;div class&#x3D;&quot;o-media__img&quot;&gt;
+   &lt;img src&#x3D;&quot;http://www.placehold.it/400x200&quot;&gt;
+ &lt;/div&gt;
+ &lt;div class&#x3D;&quot;o-media__body&quot;&gt;
+   &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, ratione.&lt;/p&gt;
+ &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-2" id="kssref-objects-table">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>css/5-objects/objects.table.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-objects-table">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">5.6</span>
+                  <span class="kss-section__name">Table</span>
+                </h2>
+              </a>
+
+                <div class="kss-section__description"><p>Mimics the table layout for more flexibility in responsive design.</p>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><div class="o-table">
+ <div class="o-table__row">
+   <div class="o-table__cell">Cell 1-1</div>
+   <div class="o-table__cell">Cell 1-2</div>
+   <div class="o-table__cell">Cell 1-3</div>
+ </div>
+ <div class="o-table__row">
+   <div class="o-table__cell">Cell 2-1</div>
+   <div class="o-table__cell">Cell 2-2</div>
+   <div class="o-table__cell">Cell 2-3</div>
+ </div>
+ <div class="o-table__row">
+   <div class="o-table__cell">Cell 3-1</div>
+   <div class="o-table__cell">Cell 3-2</div>
+   <div class="o-table__cell">Cell 3-3</div>
+ </div>
+</div></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;o-table&quot;&gt;
+ &lt;div class&#x3D;&quot;o-table__row&quot;&gt;
+   &lt;div class&#x3D;&quot;o-table__cell&quot;&gt;Cell 1-1&lt;/div&gt;
+   &lt;div class&#x3D;&quot;o-table__cell&quot;&gt;Cell 1-2&lt;/div&gt;
+   &lt;div class&#x3D;&quot;o-table__cell&quot;&gt;Cell 1-3&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class&#x3D;&quot;o-table__row&quot;&gt;
+   &lt;div class&#x3D;&quot;o-table__cell&quot;&gt;Cell 2-1&lt;/div&gt;
+   &lt;div class&#x3D;&quot;o-table__cell&quot;&gt;Cell 2-2&lt;/div&gt;
+   &lt;div class&#x3D;&quot;o-table__cell&quot;&gt;Cell 2-3&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class&#x3D;&quot;o-table__row&quot;&gt;
+   &lt;div class&#x3D;&quot;o-table__cell&quot;&gt;Cell 3-1&lt;/div&gt;
+   &lt;div class&#x3D;&quot;o-table__cell&quot;&gt;Cell 3-2&lt;/div&gt;
+   &lt;div class&#x3D;&quot;o-table__cell&quot;&gt;Cell 3-3&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </article>
+
+            </section>
+    </section>
+    <!-- /documentation. -->
+
+
+
+  <!-- scripts. -->
+  <script src="kss-assets/vendor/jquery.js"></script>
+  <script src="kss-assets/vendor/prism.js"></script>
+  <script src="kss-assets/js/kss.js"></script>
+  <script src="../../dest/js/modernizr.min.js"></script>
+<script src="../../dest/js/vendor.min.js"></script>
+<script src="../../dest/js/main.min.js"></script>
+
+  <!-- /scripts. -->
+
+  </body>
+</html>

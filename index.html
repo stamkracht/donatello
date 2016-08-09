@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Donatello Styleguide</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="generator" content="kss-node">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300">
+    <link rel="stylesheet" href="kss-assets/vendor/prism.css">
+    <link rel="stylesheet" href="kss-assets/css/kss.css">
+    <link rel="stylesheet" href="../../dest/css/main.min.css">
+
+  </head>
+
+  <body class="kss-body">
+
+    <!-- header. -->
+    <header class="kss-header">
+      <section class="kss-header__inner">
+        <a class="kss-header__hamburger-trigger">
+          <div class="kss-header__hamburger"></div>
+        </a>
+        <h1 class="kss-header__title kss-title">Donatello Styleguide</h1>
+      </section>
+    </header>
+    <!-- /header. -->
+
+
+    <!-- navigation. -->
+    <section class="kss-navigation">
+      <h1 class="kss-navigation__title kss-title">Donatello Styleguide</h1>
+      <ul class="kss-nav">
+        <li class="kss-nav__item">
+          <a href="index.html">
+            <span class="kss-nav__ref">0</span>
+            <span class="kss-nav__name">Introduction</span>
+          </a>
+        </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-settings.html">
+              <span class="kss-nav__ref">1</span>
+              <span class="kss-nav__name">Settings</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-tools.html">
+              <span class="kss-nav__ref">2</span>
+              <span class="kss-nav__name">Tools</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-generic.html">
+              <span class="kss-nav__ref">3</span>
+              <span class="kss-nav__name">Generic</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-base.html">
+              <span class="kss-nav__ref">4</span>
+              <span class="kss-nav__name">Base</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-objects.html">
+              <span class="kss-nav__ref">5</span>
+              <span class="kss-nav__name">Objects</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-components.html">
+              <span class="kss-nav__ref">6</span>
+              <span class="kss-nav__name">Components</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-scopes.html">
+              <span class="kss-nav__ref">7</span>
+              <span class="kss-nav__name">Scopes</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-trumps.html">
+              <span class="kss-nav__ref">8</span>
+              <span class="kss-nav__name">Trumps</span>
+            </a>
+          </li>
+      </ul>
+    </section>
+    <!-- /navigation. -->
+
+
+    <!-- documentation. -->
+    <section class="kss-documentation">
+        <article class="kss-markdown">
+          <h2 id="table-of-contents">Table of contents</h2>
+<ul>
+<li><a href="#directory-structure">Directory structure</a></li>
+<li><a href="#css-itcss">CSS: ITCSS</a></li>
+<li><a href="#javascript-babel">JavaScript: babel</a></li>
+<li><a href="#javascript-browserify">JavaScript: browserify</a></li>
+<li><a href="#kss-node-michelangelo">KSS-node: michelangelo</a></li>
+<li><a href="#resources">Resources</a></li>
+</ul>
+<h2 id="directory-structure">Directory structure</h2>
+<pre><code>
+┌── src
+│   ├── css
+│   │   ├── 1-settings
+│   │   ├── 2-tools
+│   │   ├── 3-generic
+│   │   ├── 4-base
+│   │   ├── 5-objects
+│   │   ├── 6-components
+│   │   ├── 7-scopes
+│   │   ├── 8-trumps
+│   │   └── index.scss
+│   ├── js
+│   ├── fonts
+│   ├── img
+│   └── sounds
+├── tmp
+├── dest
+├── node_modules
+├── package.json
+├── bower_components
+├── bower.json
+├── kss_styleguide
+├── kss-config.json
+├── gulp_tasks
+└── gulpfile.js
+</code></pre><h2 id="css-itcss">CSS: ITCSS</h2>
+<p>It stands for Inverted Triangle CSS. It is a fully managed CSS architecture. It&#39;s not a framework or library; there&#39;s nothing to download or install.
+It&#39;s a collection of principles and metrics by which developers should group and order their CSS in order to keep it scalable, terse, logical, and manageable.
+It&#39;s very specifically opinionated in that it gives definite rules and guidelines for your source order and groupings, but it leaves decisions about naming conventions and preprocessors etc. up to you.</p>
+<p>The ITCSS philosophy is a simple one at its core. Basically that we should order CSS by metrics defined by the language (and its features) than by the usual standard of human-oriented patterns.
+ITCSS takes CSS and writes it in a way that browsers and the design of the language can best utilise, which gives us far better scalability and maintainability than we&#39;d get if we were to write CSS around how a person thinks.</p>
+<p>That said, the move to ITCSS (both conceptually and in practice) is not a huge shock to the system as you might imagine; it basically just rewires a couple of fundamentals and then it&#39;s business as usual.</p>
+<ul>
+<li><strong>Settings</strong> <br> The preprocessor variables are the globally-available settings or configuration switches for our project.</li>
+<li><strong>Tools</strong> <br> Includes all the public mixins and helper functions. These globally-available tools should make our development flow easier.</li>
+<li><strong>Generic</strong> <br> The ground zero styles. They are low-specificity and far reaching. Think about resets and normalizing our styles for cross-browser compatibility.</li>
+<li><strong>Base</strong> <br> Unclassed HTML elements. This is the last layer where we use type selectors. Anything necessary to style raw elements goes in here.</li>
+<li><strong>Objects</strong> <br> Object oriented CSS. Begin using classes exclusively for agnostically named noncosmetic design patterns. This layer is mostly layout-driven.</li>
+<li><strong>Components</strong> <br> Explicitly named designed pieces of UI. The cosmetic layer, includes more specific styling instructions.</li>
+<li><strong>Scopes</strong> <br> Consists out of components grouped together. They rely entirely on nesting, so make sure people are aware of this.</li>
+<li><strong>Trumps</strong> <br> Only affect one piece of the DOM at a time. These are the utility classes or overrides and usually carry !important.</li>
+</ul>
+<h2 id="javascript-babel">JavaScript: Babel</h2>
+<p>It gives support for the latest version of JavaScript through syntax transformers. These plugins allow you to use new syntax, right now without waiting for browser support.</p>
+<h2 id="javascript-browserify">JavaScript: Browserify</h2>
+<p>It is a tool for compiling node-flavored commonjs modules for the browser. You can use browserify to organize your code and use third-party libraries.</p>
+<h2 id="kss-node-michelangelo">KSS-node: michelangelo</h2>
+<p>This software is a Node.js implementation of Knyle Style Sheets (KSS). This is a documentation syntax for CSS, that&#39;s intended to have syntax readable by humans and machines. The kss-node software can be used to create a living style guide.</p>
+<p>Write human-readable documentation using KSS syntax comments. Have the kss tool automatically build a style guide from your stylesheets. Michelangelo is the custom template for the KSS-node living style guide. Have a look <a href="https://github.com/stamkracht/michelangelo" title="Github repo: michelangelo">here</a> to get started with the template and the kss-node syntax.</p>
+<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="http://www.creativebloq.com/web-design/manage-large-scale-web-projects-new-css-architecture-itcss-41514731" title="Manage large-scale web projects with new CSS architecture ITCSS">ITCSS</a></li>
+<li><a href="https://babeljs.io/" title="Babel transforms your JavaScript">Babel</a></li>
+<li><a href="https://github.com/substack/browserify-handbook" title="How to use browserify to build modular applications">Browserify</a></li>
+<li><a href="https://github.com/stamkracht/michelangelo" title="Github repo: michelangelo">Michelangelo</a></li>
+<li><a href="https://github.com/kss-node/kss-node" title="Github repo: kss-node">KSS-node</a></li>
+</ul>
+
+        </article>
+    </section>
+    <!-- /documentation. -->
+
+
+
+  <!-- scripts. -->
+  <script src="kss-assets/vendor/jquery.js"></script>
+  <script src="kss-assets/vendor/prism.js"></script>
+  <script src="kss-assets/js/kss.js"></script>
+  <script src="../../dest/js/modernizr.min.js"></script>
+<script src="../../dest/js/vendor.min.js"></script>
+<script src="../../dest/js/main.min.js"></script>
+
+  <!-- /scripts. -->
+
+  </body>
+</html>

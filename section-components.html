@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Donatello Styleguide</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="generator" content="kss-node">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300">
+    <link rel="stylesheet" href="kss-assets/vendor/prism.css">
+    <link rel="stylesheet" href="kss-assets/css/kss.css">
+    <link rel="stylesheet" href="../../dest/css/main.min.css">
+
+  </head>
+
+  <body class="kss-body">
+
+    <!-- header. -->
+    <header class="kss-header">
+      <section class="kss-header__inner">
+        <a class="kss-header__hamburger-trigger">
+          <div class="kss-header__hamburger"></div>
+        </a>
+        <h1 class="kss-header__title kss-title">Donatello Styleguide</h1>
+      </section>
+    </header>
+    <!-- /header. -->
+
+
+    <!-- navigation. -->
+    <section class="kss-navigation">
+      <h1 class="kss-navigation__title kss-title">Donatello Styleguide</h1>
+      <ul class="kss-nav">
+        <li class="kss-nav__item">
+          <a href="index.html">
+            <span class="kss-nav__ref">0</span>
+            <span class="kss-nav__name">Introduction</span>
+          </a>
+        </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-settings.html">
+              <span class="kss-nav__ref">1</span>
+              <span class="kss-nav__name">Settings</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-tools.html">
+              <span class="kss-nav__ref">2</span>
+              <span class="kss-nav__name">Tools</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-generic.html">
+              <span class="kss-nav__ref">3</span>
+              <span class="kss-nav__name">Generic</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-base.html">
+              <span class="kss-nav__ref">4</span>
+              <span class="kss-nav__name">Base</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-objects.html">
+              <span class="kss-nav__ref">5</span>
+              <span class="kss-nav__name">Objects</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="kss-state-active" href="section-components.html">
+              <span class="kss-nav__ref">6</span>
+              <span class="kss-nav__name">Components</span>
+            </a>
+                <ul class="kss-nav__subnav">
+                    <li class="kss-nav__item ">
+                      <a href="section-components.html#kssref-components-button">
+                        <span class="kss-nav__ref">6.1</span>
+                        <span class="kss-nav__name">Button</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-components.html#kssref-components-card">
+                        <span class="kss-nav__ref">6.2</span>
+                        <span class="kss-nav__name">Card</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-components.html#kssref-components-form">
+                        <span class="kss-nav__ref">6.3</span>
+                        <span class="kss-nav__name">Form</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-components.html#kssref-components-inputgroup">
+                        <span class="kss-nav__ref">6.4</span>
+                        <span class="kss-nav__name">Input group</span>
+                      </a>
+                    </li>
+                </ul>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-scopes.html">
+              <span class="kss-nav__ref">7</span>
+              <span class="kss-nav__name">Scopes</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-trumps.html">
+              <span class="kss-nav__ref">8</span>
+              <span class="kss-nav__name">Trumps</span>
+            </a>
+          </li>
+      </ul>
+    </section>
+    <!-- /navigation. -->
+
+
+    <!-- documentation. -->
+    <section class="kss-documentation">
+
+        <!--
+          display each section, in order.
+          the "root" element comes first in this loop, and can be detected using
+          the "#if @first" block as seen below.
+        -->
+            <header class="kss-section kss-section--depth-1" id="kssref-components">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>css/6-components/_components.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-components">
+                <h1 class="kss-section__item kss-section__item--depth-1">
+                  <span class="kss-section__ref">6</span>
+                  <span class="kss-section__name">Components</span>
+                </h1>
+              </a>
+
+                <div class="kss-section__description"><p>Explicitly named designed pieces of UI. The cosmetic layer,
+includes more specific styling instructions.</p>
+</div>
+
+            </article>
+
+
+            </header>
+            <section class="kss-section kss-section--depth-2" id="kssref-components-button">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>css/6-components/components.button.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-components-button">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">6.1</span>
+                  <span class="kss-section__name">Button</span>
+                </h2>
+              </a>
+
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><button class="c-button">button</button>
+<a class="c-button">a-button</a>
+<span class="c-button">span-button</span></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;button class&#x3D;&quot;c-button&quot;&gt;button&lt;/button&gt;
+&lt;a class&#x3D;&quot;c-button&quot;&gt;a-button&lt;/a&gt;
+&lt;span class&#x3D;&quot;c-button&quot;&gt;span-button&lt;/span&gt;</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-2" id="kssref-components-card">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>css/6-components/components.card.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-components-card">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">6.2</span>
+                  <span class="kss-section__name">Card</span>
+                </h2>
+              </a>
+
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><section class="c-card">
+ <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit fugit alias tenetur quam voluptatum animi quos numquam illo. Maiores, doloribus!</p>
+</section></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;section class&#x3D;&quot;c-card&quot;&gt;
+ &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit fugit alias tenetur quam voluptatum animi quos numquam illo. Maiores, doloribus!&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-2" id="kssref-components-form">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>css/6-components/components.form.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-components-form">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">6.3</span>
+                  <span class="kss-section__name">Form</span>
+                </h2>
+              </a>
+
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><form class="c-form"
+      action="">
+  <fieldset class="c-form__group">
+    <legend class="c-form__group-title">Radio buttons</legend>
+      <div class="c-form__control checkables-inline">
+        <label>
+          <input type="radio" name="sex" value="male">
+          Male
+        </label>
+        <label>
+          <input type="radio" name="sex" value="female">
+          Female
+        </label>
+      </div>
+  </fieldset>
+  <fieldset class="c-form__group">
+    <legend class="c-form__group-title">Checkbox buttons</legend>
+      <div class="c-form__control checkables-stacked">
+        <label>
+          <input type="checkbox" name="motors" value="harley-davidson">
+          Harley Davidson
+        </label>
+        <label>
+          <input type="checkbox" name="motors" value="suzuki">
+          Suzuki
+        </label>
+      </div>
+  </fieldset>
+  <fieldset class="c-form__group">
+    <legend class="c-form__group-title">Select your pokemon</legend>
+      <label class="c-form__control">
+        Choose your favorite
+        <select name="select">
+          <option value="value1">Pikachu</option>
+          <option value="value2" selected>Charmander</option>
+          <option value="value3">Bulbasaur 3</option>
+        </select>
+      </label>
+      <label class="c-form__control">
+        Choose your enemies
+        <select multiple name="select">
+          <option value="value1">Magcargo</option>
+          <option value="value2" selected>Metang</option>
+          <option value="value3">Lugia</option>
+          <option value="value3">Grimer</option>
+          <option value="value3">Arceus</option>
+        </select>
+      </label>
+  </fieldset>
+  <fieldset class="c-form__group">
+    <legend class="c-form__group-title">Complete your account</legend>
+      <label class="c-form__control">Name
+        <input type="text" name="name" placeholder="John Doe" required>
+      </label>
+      <label class="c-form__control">Age
+        <input type="number" name="age" min="1">
+      </label>
+      <label class="c-form__control">Favorite color
+        <input type="color" name="fav-color" value="#a9dd3b">
+      </label>
+      <label class="c-form__control">Last time you sneezed
+        <input type="date" name="sneezed">
+      </label>
+      <label class="c-form__control">How hot are you
+        <input type="range" name="hot" value="5" min="0" max="10" step="1">
+      </label>
+      <label class="c-form__control">Email
+        <input type="email" name="email" placeholder="name@email.com">
+      </label>
+      <label class="c-form__control">Password
+        <input type="password" name="password">
+      </label>
+  </fieldset>
+  <fieldset class="c-form__group">
+    <legend class="c-form__group-title">Tell something about yourself</legend>
+      <label class="c-form__control">
+        It all started when..
+        <textarea></textarea>
+      </label>
+  </fieldset>
+  <fieldset class="c-form__group">
+    <legend class="c-form__group-title">Now allowed</legend>
+      <label class="c-form__control">
+        Doesn't work
+        <input type="text" name="name" placeholder="Nope" disabled>
+      </label>
+      <label class="c-form__control">
+        Can't select
+        <select name="select" disabled>
+          <option value="value1" selected>Nope</option>
+          <option value="value3">Noping</option>
+          <option value="value3">Hell no</option>
+        </select>
+      </label>
+      <label class="c-form__control">
+        Can't select
+        <select multiple name="select" disabled>
+          <option value="value1">Nope</option>
+          <option value="value2" selected>No</option>
+          <option value="value3">Nah</option>
+          <option value="value3">Noping</option>
+          <option value="value3">Hell no</option>
+        </select>
+      </label>
+  </fieldset>
+  <fieldset class="c-form__group">
+    <legend class="c-form__group-title">Labels on the left</legend>
+      <div class="c-form__control input-inline">
+        <div class="g-row12">
+          <div class="g-col4--xs">
+            <label>Name</label>
+          </div>
+          <div class="g-col8--xs">
+            <input type="text" name="name" placeholder="John Doe">
+          </div>
+        </div>
+      </div>
+      <div class="c-form__control input-inline">
+        <div class="g-row12">
+          <div class="g-col4--xs">
+            <label>Longer name</label>
+          </div>
+          <div class="g-col8--xs">
+            <input type="text" name="name" placeholder="John Doe">
+          </div>
+        </div>
+      </div>
+      <div class="c-form__control input-inline">
+        <div class="g-row12">
+          <div class="g-col4--xs">
+            <label>Even longer name</label>
+          </div>
+          <div class="g-col8--xs">
+            <input type="text" name="name" placeholder="John Doe">
+          </div>
+        </div>
+      </div>
+  </fieldset>
+</form>
+</div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;form class&#x3D;&quot;c-form&quot;
+      action&#x3D;&quot;&quot;&gt;
+  &lt;fieldset class&#x3D;&quot;c-form__group&quot;&gt;
+    &lt;legend class&#x3D;&quot;c-form__group-title&quot;&gt;Radio buttons&lt;/legend&gt;
+      &lt;div class&#x3D;&quot;c-form__control checkables-inline&quot;&gt;
+        &lt;label&gt;
+          &lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;sex&quot; value&#x3D;&quot;male&quot;&gt;
+          Male
+        &lt;/label&gt;
+        &lt;label&gt;
+          &lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;sex&quot; value&#x3D;&quot;female&quot;&gt;
+          Female
+        &lt;/label&gt;
+      &lt;/div&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset class&#x3D;&quot;c-form__group&quot;&gt;
+    &lt;legend class&#x3D;&quot;c-form__group-title&quot;&gt;Checkbox buttons&lt;/legend&gt;
+      &lt;div class&#x3D;&quot;c-form__control checkables-stacked&quot;&gt;
+        &lt;label&gt;
+          &lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;motors&quot; value&#x3D;&quot;harley-davidson&quot;&gt;
+          Harley Davidson
+        &lt;/label&gt;
+        &lt;label&gt;
+          &lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;motors&quot; value&#x3D;&quot;suzuki&quot;&gt;
+          Suzuki
+        &lt;/label&gt;
+      &lt;/div&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset class&#x3D;&quot;c-form__group&quot;&gt;
+    &lt;legend class&#x3D;&quot;c-form__group-title&quot;&gt;Select your pokemon&lt;/legend&gt;
+      &lt;label class&#x3D;&quot;c-form__control&quot;&gt;
+        Choose your favorite
+        &lt;select name&#x3D;&quot;select&quot;&gt;
+          &lt;option value&#x3D;&quot;value1&quot;&gt;Pikachu&lt;/option&gt;
+          &lt;option value&#x3D;&quot;value2&quot; selected&gt;Charmander&lt;/option&gt;
+          &lt;option value&#x3D;&quot;value3&quot;&gt;Bulbasaur 3&lt;/option&gt;
+        &lt;/select&gt;
+      &lt;/label&gt;
+      &lt;label class&#x3D;&quot;c-form__control&quot;&gt;
+        Choose your enemies
+        &lt;select multiple name&#x3D;&quot;select&quot;&gt;
+          &lt;option value&#x3D;&quot;value1&quot;&gt;Magcargo&lt;/option&gt;
+          &lt;option value&#x3D;&quot;value2&quot; selected&gt;Metang&lt;/option&gt;
+          &lt;option value&#x3D;&quot;value3&quot;&gt;Lugia&lt;/option&gt;
+          &lt;option value&#x3D;&quot;value3&quot;&gt;Grimer&lt;/option&gt;
+          &lt;option value&#x3D;&quot;value3&quot;&gt;Arceus&lt;/option&gt;
+        &lt;/select&gt;
+      &lt;/label&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset class&#x3D;&quot;c-form__group&quot;&gt;
+    &lt;legend class&#x3D;&quot;c-form__group-title&quot;&gt;Complete your account&lt;/legend&gt;
+      &lt;label class&#x3D;&quot;c-form__control&quot;&gt;Name
+        &lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;name&quot; placeholder&#x3D;&quot;John Doe&quot; required&gt;
+      &lt;/label&gt;
+      &lt;label class&#x3D;&quot;c-form__control&quot;&gt;Age
+        &lt;input type&#x3D;&quot;number&quot; name&#x3D;&quot;age&quot; min&#x3D;&quot;1&quot;&gt;
+      &lt;/label&gt;
+      &lt;label class&#x3D;&quot;c-form__control&quot;&gt;Favorite color
+        &lt;input type&#x3D;&quot;color&quot; name&#x3D;&quot;fav-color&quot; value&#x3D;&quot;#a9dd3b&quot;&gt;
+      &lt;/label&gt;
+      &lt;label class&#x3D;&quot;c-form__control&quot;&gt;Last time you sneezed
+        &lt;input type&#x3D;&quot;date&quot; name&#x3D;&quot;sneezed&quot;&gt;
+      &lt;/label&gt;
+      &lt;label class&#x3D;&quot;c-form__control&quot;&gt;How hot are you
+        &lt;input type&#x3D;&quot;range&quot; name&#x3D;&quot;hot&quot; value&#x3D;&quot;5&quot; min&#x3D;&quot;0&quot; max&#x3D;&quot;10&quot; step&#x3D;&quot;1&quot;&gt;
+      &lt;/label&gt;
+      &lt;label class&#x3D;&quot;c-form__control&quot;&gt;Email
+        &lt;input type&#x3D;&quot;email&quot; name&#x3D;&quot;email&quot; placeholder&#x3D;&quot;name@email.com&quot;&gt;
+      &lt;/label&gt;
+      &lt;label class&#x3D;&quot;c-form__control&quot;&gt;Password
+        &lt;input type&#x3D;&quot;password&quot; name&#x3D;&quot;password&quot;&gt;
+      &lt;/label&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset class&#x3D;&quot;c-form__group&quot;&gt;
+    &lt;legend class&#x3D;&quot;c-form__group-title&quot;&gt;Tell something about yourself&lt;/legend&gt;
+      &lt;label class&#x3D;&quot;c-form__control&quot;&gt;
+        It all started when..
+        &lt;textarea&gt;&lt;/textarea&gt;
+      &lt;/label&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset class&#x3D;&quot;c-form__group&quot;&gt;
+    &lt;legend class&#x3D;&quot;c-form__group-title&quot;&gt;Now allowed&lt;/legend&gt;
+      &lt;label class&#x3D;&quot;c-form__control&quot;&gt;
+        Doesn&#x27;t work
+        &lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;name&quot; placeholder&#x3D;&quot;Nope&quot; disabled&gt;
+      &lt;/label&gt;
+      &lt;label class&#x3D;&quot;c-form__control&quot;&gt;
+        Can&#x27;t select
+        &lt;select name&#x3D;&quot;select&quot; disabled&gt;
+          &lt;option value&#x3D;&quot;value1&quot; selected&gt;Nope&lt;/option&gt;
+          &lt;option value&#x3D;&quot;value3&quot;&gt;Noping&lt;/option&gt;
+          &lt;option value&#x3D;&quot;value3&quot;&gt;Hell no&lt;/option&gt;
+        &lt;/select&gt;
+      &lt;/label&gt;
+      &lt;label class&#x3D;&quot;c-form__control&quot;&gt;
+        Can&#x27;t select
+        &lt;select multiple name&#x3D;&quot;select&quot; disabled&gt;
+          &lt;option value&#x3D;&quot;value1&quot;&gt;Nope&lt;/option&gt;
+          &lt;option value&#x3D;&quot;value2&quot; selected&gt;No&lt;/option&gt;
+          &lt;option value&#x3D;&quot;value3&quot;&gt;Nah&lt;/option&gt;
+          &lt;option value&#x3D;&quot;value3&quot;&gt;Noping&lt;/option&gt;
+          &lt;option value&#x3D;&quot;value3&quot;&gt;Hell no&lt;/option&gt;
+        &lt;/select&gt;
+      &lt;/label&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset class&#x3D;&quot;c-form__group&quot;&gt;
+    &lt;legend class&#x3D;&quot;c-form__group-title&quot;&gt;Labels on the left&lt;/legend&gt;
+      &lt;div class&#x3D;&quot;c-form__control input-inline&quot;&gt;
+        &lt;div class&#x3D;&quot;g-row12&quot;&gt;
+          &lt;div class&#x3D;&quot;g-col4--xs&quot;&gt;
+            &lt;label&gt;Name&lt;/label&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;g-col8--xs&quot;&gt;
+            &lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;name&quot; placeholder&#x3D;&quot;John Doe&quot;&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;c-form__control input-inline&quot;&gt;
+        &lt;div class&#x3D;&quot;g-row12&quot;&gt;
+          &lt;div class&#x3D;&quot;g-col4--xs&quot;&gt;
+            &lt;label&gt;Longer name&lt;/label&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;g-col8--xs&quot;&gt;
+            &lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;name&quot; placeholder&#x3D;&quot;John Doe&quot;&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;c-form__control input-inline&quot;&gt;
+        &lt;div class&#x3D;&quot;g-row12&quot;&gt;
+          &lt;div class&#x3D;&quot;g-col4--xs&quot;&gt;
+            &lt;label&gt;Even longer name&lt;/label&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;g-col8--xs&quot;&gt;
+            &lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;name&quot; placeholder&#x3D;&quot;John Doe&quot;&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;
+</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-2" id="kssref-components-inputgroup">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>css/6-components/components.input-group.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-components-inputgroup">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">6.4</span>
+                  <span class="kss-section__name">Input group</span>
+                </h2>
+              </a>
+
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><form class="c-form"
+     action="">
+ <fieldset class="c-form__group">
+   <legend class="c-form__group-title">Show me the money</legend>
+     <label class="c-form__control">
+       How much can you lose?
+       <div class="c-input-group">
+         <span class="c-input-group__label">€</span>
+         <input class="c-input-group__field" type="number" placeholder="over 9000!">
+         <div class="c-input-group__button">
+           <button>This much</button>
+         </div>
+       </div>
+     </label>
+ </fieldset>
+</form></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;form class&#x3D;&quot;c-form&quot;
+     action&#x3D;&quot;&quot;&gt;
+ &lt;fieldset class&#x3D;&quot;c-form__group&quot;&gt;
+   &lt;legend class&#x3D;&quot;c-form__group-title&quot;&gt;Show me the money&lt;/legend&gt;
+     &lt;label class&#x3D;&quot;c-form__control&quot;&gt;
+       How much can you lose?
+       &lt;div class&#x3D;&quot;c-input-group&quot;&gt;
+         &lt;span class&#x3D;&quot;c-input-group__label&quot;&gt;€&lt;/span&gt;
+         &lt;input class&#x3D;&quot;c-input-group__field&quot; type&#x3D;&quot;number&quot; placeholder&#x3D;&quot;over 9000!&quot;&gt;
+         &lt;div class&#x3D;&quot;c-input-group__button&quot;&gt;
+           &lt;button&gt;This much&lt;/button&gt;
+         &lt;/div&gt;
+       &lt;/div&gt;
+     &lt;/label&gt;
+ &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+                </article>
+
+            </section>
+    </section>
+    <!-- /documentation. -->
+
+
+
+  <!-- scripts. -->
+  <script src="kss-assets/vendor/jquery.js"></script>
+  <script src="kss-assets/vendor/prism.js"></script>
+  <script src="kss-assets/js/kss.js"></script>
+  <script src="../../dest/js/modernizr.min.js"></script>
+<script src="../../dest/js/vendor.min.js"></script>
+<script src="../../dest/js/main.min.js"></script>
+
+  <!-- /scripts. -->
+
+  </body>
+</html>
