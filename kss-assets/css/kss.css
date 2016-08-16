@@ -5,7 +5,7 @@
 
 .kss-title {
   margin: 0;
-  color: #E87E04;
+  color: #8e44ad;
   text-align: center;
   font-size: 1.5rem;
   font-family: 'Lato', sans-serif;
@@ -21,7 +21,7 @@
   width: 100%;
   min-height: 50px;
   padding: 10px;
-  color: #E87E04;
+  color: #8e44ad;
   background: #FFFFFF;
   font-family: 'Lato', sans-serif;
   font-weight: 400; }
@@ -55,8 +55,8 @@
   margin-top: 13px;
   margin-bottom: 13px;
   border-radius: 5px;
-  color: #E87E04;
-  background: #E87E04;
+  color: #8e44ad;
+  background: #8e44ad;
   -webkit-perspective: 1000;
   -webkit-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
@@ -67,7 +67,7 @@
     position: absolute;
     width: 30px;
     height: 4px;
-    background: #E87E04;
+    background: #8e44ad;
     transition: all 0.5s; }
   .kss-header__hamburger:before {
     top: -8px;
@@ -150,11 +150,11 @@
   text-decoration: none;
   transition: color 0.3s; }
   .kss-nav__item a:hover {
-    color: #E87E04; }
+    color: #8e44ad; }
   .kss-nav__item a:hover .kss-nav__name {
     transform: translateX(6px); }
   .kss-nav__item a.kss-state-active {
-    color: #E87E04; }
+    color: #8e44ad; }
   .kss-nav__item a.kss-state-active:hover .kss-nav__name {
     transform: none; }
 
@@ -216,7 +216,7 @@
     outline: 0; }
   .kss-markdown h1,
   .kss-markdown h2 {
-    color: #E87E04;
+    color: #8e44ad;
     font-weight: 700; }
   .kss-markdown h2 {
     margin-top: 3rem; }
@@ -225,7 +225,7 @@
   .kss-markdown h5,
   .kss-markdown h6 {
     margin-top: 1.5rem;
-    color: #E87E04;
+    color: #8e44ad;
     font-weight: 700; }
   .kss-markdown h1 {
     font-size: 2rem; }
@@ -328,7 +328,7 @@
 .kss-section__item {
   margin: 0;
   margin-bottom: 5px;
-  color: #E87E04;
+  color: #8e44ad;
   font-size: 2rem;
   font-family: 'Lato', sans-serif;
   font-weight: 400; }
@@ -424,14 +424,14 @@
   font-family: 'Lato', sans-serif;
   font-size: 1.125rem;
   font-weight: 700;
-  color: #E87E04; }
+  color: #8e44ad; }
 
 .kss-modifiers__name {
   margin: 0;
   margin-bottom: 5px;
   font-size: 1rem;
   font-weight: 400;
-  color: #E87E04; }
+  color: #8e44ad; }
 
 .kss-modifiers__description {
   margin: 0; }
