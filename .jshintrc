@@ -1,0 +1,24 @@
+{
+  // Enforcing options
+  // http://jshint.com//docs/options/#enforcing-options
+
+    'bitwise': true,
+    'forin': true,
+    'latedef': 'nofunc',
+    'noarg': true,
+    'nonbsp': true,
+    'nonew': true,
+    'undef': true,
+    'unused': true,
+
+  // Relaxing options
+  // http://jshint.com//docs/options/#relaxing-options
+
+    'esversion': 6,
+
+  // Environments
+  // http://jshint.com//docs/options/#environments
+
+    'browser': true,
+    'node': true
+}
