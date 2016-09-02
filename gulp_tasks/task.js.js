@@ -11,7 +11,7 @@ module.exports = function (gulp) {
       entries: 'src/js/index.js',
       debug: true
     })
-      .transform(config.babelify, { presets: ['es2015'] })
+      .transform(config.babelify, { presets: ['es2015', 'es2016'] })
       .bundle()
       .pipe(config.vss('main.js'))
       .pipe(gulp.dest(config.source.tmp))
