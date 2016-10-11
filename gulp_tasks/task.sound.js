@@ -7,7 +7,7 @@ module.exports = function (gulp) {
 
   gulp.task('sound', function () {
 
-    return gulp.src('src/sounds/**/*.{mp3,ogg}')
+    return gulp.src('src/sound/**/*.{mp3,ogg}')
       .pipe(gulp.dest(config.source.dest.sound));
 
   });
