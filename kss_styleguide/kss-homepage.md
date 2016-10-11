@@ -23,9 +23,9 @@
 │   │   ├── 8-trumps
 │   │   └── index.scss
 │   ├── js
-│   ├── fonts
+│   ├── font
 │   ├── img
-│   └── sounds
+│   └── sound
 ├── tmp
 ├── dest
 ├── node_modules
