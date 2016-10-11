@@ -9,7 +9,7 @@ module.exports = function (gulp) {
 
     return config.imagemin(['src/img/**/*.{jpg,png}'], config.source.dest.img, {
       plugins: [
-        config.mozjpeg({ targa: true }),
+        config.mozjpeg(),
         config.pngquant({ quality: '65-80' })
       ]
     })
