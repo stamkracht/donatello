@@ -1,0 +1,31 @@
+// Form
+//
+// Markup: ../kss_styleguide/markup/base.form.html
+//
+// Styleguide Base.Form
+
+
+$placeholder-color: $gray;
+
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+label { cursor: pointer; }
+
+textarea { resize: vertical; }
+
+input,
+textarea {
+  border-radius: 0;
+  line-height: inherit;
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus { outline: 0 none; }
+
+::placeholder { color: $placeholder-color; }
