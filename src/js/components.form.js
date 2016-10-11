@@ -18,9 +18,9 @@
       }
     }
 
-    // set attribute data-feedback-activated on input after an keyup event.
+    // set attribute data-feedback-activated on input after an keydown event.
     for (let i = 0; i < formInputs.length; i++) {
-      formInputs[i].addEventListener('keyup', function () {
+      formInputs[i].addEventListener('keydown', function () {
         this.setAttribute('data-feedback-activated', true);
       });
     }
