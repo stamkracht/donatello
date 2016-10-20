@@ -17,7 +17,7 @@ module.exports = function (gulp) {
         .pipe(config.plugins.postcss(processors))
         .pipe(config.plugins.rename({ basename: 'main' }))
         .pipe(gulp.dest(config.source.tmp))
-        .pipe(config.plugins.cssnano())
+        .pipe(config.plugins.cssnano({ zindex: false }))
         .pipe(config.plugins.rename({ suffix: '.min' }))
       .pipe(config.plugins.sourcemaps.write('../../' + config.source.tmp))
       .pipe(gulp.dest(config.source.dest.css))
