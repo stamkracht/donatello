@@ -28,11 +28,10 @@
 @import '4-base/base.text-level.scss';
 
 
-@import '5-objects/objects.flag.scss';
 @import '5-objects/objects.grid.scss';
-@import '5-objects/objects.list.scss';
 @import '5-objects/objects.media.scss';
-@import '5-objects/objects.table.scss';
+@import '5-objects/objects.flag.scss';
+@import '5-objects/objects.list.scss';
 @import '5-objects/objects.list-inline.scss';
 
 
@@ -45,10 +44,8 @@
 @import '7-scopes/scopes.healthcheck.scss';
 
 
-@import '8-trumps/utilities.alignment.scss';
-@import '8-trumps/utilities.text.scss';
+@import '8-trumps/utilities.hidden.scss';
 @import '8-trumps/utilities.clearfix.scss';
 @import '8-trumps/utilities.float.scss';
-@import '8-trumps/utilities.hidden.scss';
-@import '8-trumps/utilities.margin.scss';
-@import '8-trumps/utilities.max-width.scss';
+@import '8-trumps/utilities.alignment.scss';
+@import '8-trumps/utilities.text.scss';
