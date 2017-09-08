@@ -7,7 +7,7 @@ module.exports = function (gulp) {
 
   gulp.task('img', function () {
 
-    return config.imagemin(['src/img/**/*.{jpg,png}'], config.source.dest.img, {
+    return config.imagemin(['src/img/**/*.{jpg,png,svg}'], config.source.dest, {
       plugins: [
         config.mozjpeg(),
         config.pngquant({ quality: '65-80' })

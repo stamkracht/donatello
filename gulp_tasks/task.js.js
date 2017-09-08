@@ -20,7 +20,7 @@ module.exports = function (gulp) {
         .pipe(config.plugins.rename({ suffix: '.min' }))
         .pipe(config.plugins.uglify())
       .pipe(config.plugins.sourcemaps.write('../../' + config.source.tmp))
-      .pipe(gulp.dest(config.source.dest.js));
+      .pipe(gulp.dest(config.source.dest));
 
   });
 

@@ -14,7 +14,9 @@ module.exports = function (gulp) {
   // if OS is Windows.
   else if (process.platform === 'win32') { var open = 'start'; }
 
-  gulp.task('kss', config.plugins.shell.task([
+  gulp.task('kss', config.plugins.shell.task(['kss --config kss-config.json']));
+
+  gulp.task('kss:show', config.plugins.shell.task([
 
     'kss --config kss-config.json',
     open + ' kss_styleguide/styleguide/index.html'

@@ -1,4 +1,4 @@
-module.exports = function (gulp) {
+module.exports = function(gulp) {
 
   'use strict';
 
@@ -18,21 +18,14 @@ module.exports = function (gulp) {
     pngquant       : require('imagemin-pngquant'),
     plugins        : require('gulp-load-plugins')({
       rename: {
-        'gulp-main-bower-files': 'bower',
         'gulp-rev-append': 'rev'
       }
     }),
 
-    // temporary and destination directories.
+    // source directories.
     source: {
-      tmp        : 'tmp/',
-      dest: {
-        css      : 'dest/css/',
-        js       : 'dest/js/',
-        img      : 'dest/img/',
-        font     : 'dest/font/',
-        sound    : 'dest/sound/',
-      }
+      tmp: 'tmp/',
+      dest: 'dest/'
     }
   };
 

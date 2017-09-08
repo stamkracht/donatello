@@ -10,10 +10,8 @@ module.exports = function (gulp) {
     config.browsersync({
       proxy: 'http://localhost:8000',
       files: [
-        'dest/css/vendor.css',
-        'dest/css/main.css',
-        'dest/js/vendor.js',
-        'dest/js/main.js',
+        'dest/main.css',
+        'dest/main.js',
       ],
       logPrefix: 'Donatello',
       logConnections: true,

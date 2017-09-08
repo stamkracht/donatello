@@ -5,12 +5,8 @@ module.exports = function (gulp) {
 
   var config = require('./config')();
   var dirs = [
-    config.source.dest.css,
-    config.source.dest.js,
-    config.source.dest.img,
-    config.source.dest.font,
-    config.source.dest.sound,
-    config.source.tmp
+    config.source.tmp,
+    config.source.dest
   ];
 
   gulp.task('clean', function () {

@@ -5,7 +5,7 @@ module.exports = function (gulp) {
 
   var config = require('./config')();
   var processors = [
-    config.cssnext({ browsers: ['> 1%', 'last 2 versions', 'Firefox ESR', 'Opera 12.1'] })
+    config.cssnext({ browsers: ['last 3 versions'] })
   ];
 
   gulp.task('css', function(){
@@ -20,7 +20,7 @@ module.exports = function (gulp) {
         .pipe(config.plugins.cssnano({ zindex: false }))
         .pipe(config.plugins.rename({ suffix: '.min' }))
       .pipe(config.plugins.sourcemaps.write('../../' + config.source.tmp))
-      .pipe(gulp.dest(config.source.dest.css))
+      .pipe(gulp.dest(config.source.dest))
       .pipe(config.browsersync.reload({ stream: true }));
 
   });

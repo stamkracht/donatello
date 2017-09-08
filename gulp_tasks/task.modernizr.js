@@ -33,7 +33,7 @@ module.exports = function (gulp) {
         gulp.src(config.source.tmp + 'modernizr.js')
           .pipe(config.plugins.uglify())
           .pipe(config.plugins.rename({suffix: '.min'}))
-          .pipe(gulp.dest(config.source.dest.js));
+          .pipe(gulp.dest(config.source.dest));
       });
     });
 
