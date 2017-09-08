@@ -1,7 +1,7 @@
 {
-  "title"       : "Donatello Styleguide",
-  "mask"        : "*.scss",
-  "placeholder" : "[modifier]",
+  "title"        : "Donatello Styleguide",
+  "mask"         : "*.scss",
+  "placeholder"  : "[modifier]",
 
 "//": "relative to this file.",
   "builder"      : "node_modules/michelangelo/kss_styleguide/custom-template/",
@@ -12,10 +12,9 @@
   "homepage"     : "../kss_styleguide/kss-homepage.md",
 
 "//": "relative to the generated style guide.",
-  "css": ["../../dest/css/main.min.css"],
+  "css": ["../../dest/main.min.css"],
   "js": [
-    "../../dest/js/modernizr.min.js",
-    "../../dest/js/vendor.min.js",
-    "../../dest/js/main.min.js"
+    "../../dest/modernizr.min.js",
+    "../../dest/main.min.js"
   ]
 }
