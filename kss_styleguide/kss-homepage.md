@@ -30,8 +30,6 @@
 ├── dest
 ├── node_modules
 ├── package.json
-├── bower_components
-├── bower.json
 ├── kss_styleguide
 ├── kss-config.json
 ├── gulp_tasks

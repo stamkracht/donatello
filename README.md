@@ -1,2 +1,2 @@
-# donatello
-A frontend framework to quick-start your project.
+# Donatello
+Quick-start your project.
