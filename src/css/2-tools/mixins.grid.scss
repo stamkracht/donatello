@@ -47,7 +47,7 @@
 
 // Grid system media queries
 //
-// grid-mq($width); - @include grid-mq(min/max-sm/md/lg)
+// grid-mq($width); - @include grid-mq(min/max-sm/md/lg/xl)
 //
 // Styleguide Tools.Mixins.GridSystem.Mq
 
@@ -65,6 +65,10 @@
     @media only screen and (min-width: mq-unit($grid-query-width-lg + 1)) {@content;}
   }
 
+  @else if $width == min-xl {
+    @media only screen and (min-width: mq-unit($grid-query-width-xl + 1)) {@content;}
+  }
+
   // additional media queries that are not required for the grid.
   @else if $width == max-sm {
     @media only screen and (max-width: mq-unit($grid-query-width-sm)) {@content;}
@@ -76,5 +80,9 @@
 
   @else if $width == max-lg {
     @media only screen and (max-width: mq-unit($grid-query-width-lg)) {@content;}
+  }
+
+  @else if $width == max-xl {
+    @media only screen and (max-width: mq-unit($grid-query-width-xl)) {@content;}
   }
 }

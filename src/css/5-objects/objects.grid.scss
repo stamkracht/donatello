@@ -6,6 +6,7 @@
 // - sm: 568px
 // - md: 768px
 // - lg: 1024px
+// - xl: 1440px
 //
 // Markup: ../kss_styleguide/markup/objects.grid.html
 //
@@ -48,7 +49,7 @@
   padding: 0 ($grid-gutter-width / 2);
 }
 
-// $ grid for xs, sm, md and lg devices.
+// $ grid for xs, sm, md, lg and xl devices.
 @include grid-preprocessor($grid-suffix-xs);
 
 @include grid-mq(min-sm) { @include grid-preprocessor($grid-suffix-sm); }
@@ -56,3 +57,5 @@
 @include grid-mq(min-md) { @include grid-preprocessor($grid-suffix-md); }
 
 @include grid-mq(min-lg) { @include grid-preprocessor($grid-suffix-lg); }
+
+@include grid-mq(min-xl) { @include grid-preprocessor($grid-suffix-xl); }
